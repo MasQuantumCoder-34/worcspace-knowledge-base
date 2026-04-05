@@ -4,61 +4,43 @@ import { Search, Bell, ChevronDown } from "lucide-react";
 export default function Header() {
   return (
     <header
-      className="flex items-center justify-between px-4 h-12 shrink-0"
+      className="flex items-center justify-between px-6 h-14 shrink-0 w-full"
       style={{ backgroundColor: "#1E1B4B" }}
     >
-      {/* Logo + Workspace */}
-      <div className="flex items-center gap-3">
-        {/* Logo icon */}
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-md bg-indigo-500 flex items-center justify-center">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M13 3L4 14h8l-1 7 9-11h-8l1-7z"
-                fill="white"
-                stroke="white"
-                strokeWidth="1"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-          <span className="text-white font-semibold text-sm tracking-wide">
-            Worcspace
-          </span>
+      {/* Logo */}
+      <div className="flex items-center gap-3 min-w-0">
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <img src="/logo.png" alt="Worcspace logo" className="w-10 h-14 rounded-full object-cover" />
+          <span className="text-white font-bold text-base tracking-wide hidden sm:block">Worcspace</span>
         </div>
-
-        {/* Workspace selector */}
-        <button className="flex items-center gap-1 bg-indigo-700 hover:bg-indigo-600 transition-colors text-white text-xs font-medium px-3 py-1.5 rounded-md">
-          Worcspace 1
-          <ChevronDown size={12} />
+        <button className="flex items-center gap-1 text-white text-sm font-medium px-3 py-1.5 rounded-full border border-indigo-500 hover:bg-indigo-800 transition-colors flex-shrink-0">
+          <span className="hidden sm:inline">Worcspace 1</span>
+          <span className="sm:hidden">W1</span>
+          <ChevronDown size={13} />
         </button>
       </div>
 
       {/* Search */}
-      <div className="flex-1 max-w-sm mx-8">
+      <div className="flex-1 max-w-xs mx-6 hidden md:block">
         <div className="relative">
-          <Search
-            size={14}
-            className="absolute left-3 top-1/2 -translate-y-1/2 text-indigo-300"
-          />
+          <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
           <input
             type="text"
             placeholder="Search..."
-            className="w-full bg-indigo-900 bg-opacity-60 text-white placeholder-indigo-300 text-xs pl-8 pr-12 py-1.5 rounded-md border border-indigo-700 focus:outline-none focus:border-indigo-400"
+            className="w-full text-white placeholder-gray-400 text-sm pl-9 pr-12 py-2 rounded-lg border border-indigo-600 focus:outline-none focus:border-indigo-300"
+            style={{ backgroundColor: "rgba(255,255,255,0.08)" }}
           />
-          <span className="absolute right-3 top-1/2 -translate-y-1/2 text-indigo-400 text-xs font-mono">
-            ⌘K
-          </span>
+          <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 text-xs">⌘K</span>
         </div>
       </div>
 
-      {/* Right actions */}
-      <div className="flex items-center gap-3">
-        <button className="text-indigo-300 hover:text-white transition-colors">
-          <Bell size={16} />
+      {/* Right */}
+      <div className="flex items-center gap-3 flex-shrink-0">
+        <button className="text-gray-300 hover:text-white">
+          <Bell size={18} />
         </button>
         <div
-          className="w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold"
+          className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold"
           style={{ backgroundColor: "#4F46E5" }}
         >
           GK

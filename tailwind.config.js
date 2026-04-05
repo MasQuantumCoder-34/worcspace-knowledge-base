@@ -4,18 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#4F46E5",
-          light: "#6366F1",
-          dark: "#4338CA",
-        },
-        secondary: {
-          DEFAULT: "#1E1B4B",
-          light: "#312E81",
-        },
+        primary: { DEFAULT: "#4F46E5", dark: "#4338CA" },
+        secondary: { DEFAULT: "#1E1B4B" },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
     },
   },
