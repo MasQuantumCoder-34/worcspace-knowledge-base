@@ -94,6 +94,24 @@ git branch -M main
 git push -u origin main
 ```
 
+### Step 4 – Deploy to GitHub Pages
+
+1. **Update package.json**: Replace `YOUR_USERNAME` in the `homepage` field with your actual GitHub username.
+
+2. **Deploy the app**:
+   ```bash
+   npm run deploy
+   ```
+
+3. **Enable GitHub Pages**:
+   - Go to your repository on GitHub
+   - Click **Settings** > **Pages**
+   - Under "Source", select **Deploy from a branch**
+   - Choose **gh-pages** branch and **/(root)** folder
+   - Click **Save**
+
+Your app will be live at `https://YOUR_USERNAME.github.io/worcspace-knowledge-base`
+
 ---
 
 ## 🎨 Design Tokens
