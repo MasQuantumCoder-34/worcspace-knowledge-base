@@ -78,7 +78,7 @@ export default function Sidebar() {
           w-56 transition-transform duration-200
           ${mobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
         `}
-        style={{ paddingTop: "56px" }}
+        style={{ paddingTop: "5px" }}
       >
         {nav}
       </aside>
