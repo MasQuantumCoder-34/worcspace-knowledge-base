@@ -121,6 +121,16 @@ git push -u origin main
 
 ---
 
+## 📸 Screenshots
+
+### Screen 1 – Knowledge Base Home
+![Knowledge Base Home](./screenshots/home.png)
+
+### Screen 2 – Create New Modal
+![Create Modal](./screenshots/modal.png)
+
+---
+
 ## 🧩 Component Architecture
 
 | Component | Purpose |
